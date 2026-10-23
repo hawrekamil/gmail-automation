@@ -1,0 +1,46 @@
+[project]
+name = "perplexity-agent"
+version = "0.2.0"
+description = "Flexible Perplexity-Agent für Gmail Automation mit KI-gestützten Funktionen"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Gmail Automation Team", email = "support@example.com"}
+]
+
+dependencies = [
+    "openai>=1.0.0",
+    "python-dotenv>=1.0,<2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=5.0",
+    "black>=24.0",
+    "ruff>=0.3.0",
+    "mypy>=1.0",
+]
+
+[project.scripts]
+perplexity-agent = "main:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311", "py312"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false

@@ -1,0 +1,42 @@
+# ─── Credentials & Secrets (NIEMALS committen!) ─────────
+config/credentials.json
+config/token.json
+credentials.json
+token.json
+.env
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.key
+
+# ─── Persönliche Dokumente ────────────────────────────────
+Bewerbung Unterlagen/
+*.pdf
+
+# ─── Python ───────────────────────────────────────────────
+__pycache__/
+**/*/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+
+# ─── Logs ─────────────────────────────────────────────────
+logs/
+*.log
+
+# ─── IDE & OS ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─── Externe Repositories ─────────────────────────────────
+page-agent/
+
